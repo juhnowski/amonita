@@ -5,20 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vhod"
+    tools:context=".Reapir"
     android:orientation="vertical"
-    android:layout_gravity="top"
-    >
+    android:layout_gravity="top">
+
     <View
         android:layout_width="match_parent"
         android:layout_height="20dp"
         />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="На Ваш email ранее был отправлен ID. Введите его для продолжения работы." />
+        android:text="Мы вышлем вам новый ID на указанный при регистрации email." />
 
     <View
         android:layout_width="match_parent"
@@ -26,40 +25,22 @@
         />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextTextEmailAddressepair"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ваш ID"
-        android:inputType="number" />
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-    <TextView
-        android:id="@+id/textView_NoCode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        android:text="Не пришел ID?"
-        android:onClick="goto_repair"
-        android:clickable="true"
-        />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
     <Button
         android:id="@+id/button_get_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:text="Продолжить"
+        android:text="Восстановить пароль"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-
+        android:onClick="goto_vhod_2"
         />
-
 
 </LinearLayout>

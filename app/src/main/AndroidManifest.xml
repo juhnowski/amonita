@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Vhod"></activity>
+        <activity android:name=".Reapir"></activity>
+        <activity android:name=".Vhod" />
         <activity android:name=".email" />
         <activity android:name=".Registration" />
         <activity android:name=".RegVhod" />

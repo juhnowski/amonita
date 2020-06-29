@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class Vhod : AppCompatActivity() {
+class Reapir : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_vhod)
-        setTitle("Введите ID");
+        setContentView(R.layout.activity_reapir)
+        setTitle("Укажите ваш Email");
     }
 
-    fun goto_repair(v: View){
-        val intent = Intent(this, Reapir::class.java)
+    fun goto_vhod_2(v: View){
+        val intent = Intent(this, Vhod::class.java)
         startActivity(intent)
     }
 }
