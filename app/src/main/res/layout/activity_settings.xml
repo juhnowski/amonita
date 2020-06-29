@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:orientation="vertical"
+    android:layout_gravity="top">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Язык" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Введите ваш язык"
+        android:text="Русский"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="true"
+        android:text="Получать уведомления   " />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <Button
+        android:id="@+id/button_get_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Сохранить и выйти"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="goto_client_1"
+        />
+</LinearLayout>

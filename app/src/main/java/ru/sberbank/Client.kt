@@ -29,8 +29,9 @@ class Client : AppCompatActivity() {
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+            edit_personal_info(view)
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
@@ -62,5 +63,15 @@ class Client : AppCompatActivity() {
         val i = Intent(Intent.ACTION_VIEW)
         i.data = Uri.parse(url)
         startActivity(i)
+    }
+
+    fun edit_personal_info(v: View){
+        val intent = Intent(this, PersonalInformationEdit::class.java)
+        startActivity(intent)
+    }
+
+    fun show_settings(v:View){
+        val intent = Intent(this, Settings::class.java)
+        startActivity(intent)
     }
 }

@@ -9,6 +9,6 @@
     <string name="action_settings">Настройки</string>
 
     <string name="menu_home">Профиль</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_gallery">Пункты</string>
     <string name="menu_slideshow">Новости</string>
 </resources>

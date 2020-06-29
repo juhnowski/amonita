@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".PersonalInformationEdit" />
         <activity
             android:name=".Client"
             android:label="@string/title_activity_client"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Reapir" />
         <activity android:name=".Vhod" />
         <activity android:name=".email" />
