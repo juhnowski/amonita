@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="top"
     android:orientation="vertical"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".FPunkts">
 
     <View
         android:id="@+id/divider1"
@@ -14,22 +14,8 @@
         android:layout_height="40dp"
         />
 
-    <TextView
-        android:id="@+id/textView_find_punkts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Поиск пункта" />
-
-    <View
-        android:id="@+id/divider1"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-
-
     <EditText
-        android:id="@+id/find_nearest_punkt_map"
+        android:id="@+id/find_nearest_punkt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,15 +25,9 @@
         android:drawablePadding="2dp"
         />
 
-    <Button
-        android:id="@+id/button_get_bliz_punkt"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorAccent"
-        android:text="Ближайшие пункты"
-        android:onClick="show_punkts"
+        android:layout_height="20dp"
         />
 
     <ImageView
@@ -59,9 +39,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/map" />
-
-
-
+        app:srcCompat="@drawable/p1" />
 
 </LinearLayout>
