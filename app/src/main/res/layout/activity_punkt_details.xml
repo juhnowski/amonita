@@ -115,7 +115,9 @@
                 android:drawableLeft="@android:drawable/ic_menu_report_image"
                 android:gravity="center_vertical"
                 android:drawablePadding="2dp"
-                android:text="Закупочный акт.docx" />
+                android:text="Закупочный акт.docx"
+                android:onClick="sign_act"
+                />
 
             <View
                 android:layout_width="match_parent"
@@ -150,6 +152,7 @@
                 android:drawablePadding="2dp"
                 android:background="@color/colorAccent"
                 android:text="Подписать Закупочный акт"
+                android:onClick="sign_act"
                 />
 
             <View

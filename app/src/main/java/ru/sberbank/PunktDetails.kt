@@ -27,4 +27,9 @@ class PunktDetails : AppCompatActivity() {
         Snackbar.make(v, "Закупочный пункт добавлен в Избранное", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
     }
+
+    fun sign_act(v:View){
+        val intent = Intent(this, ZakupkaAct::class.java)
+        startActivity(intent)
+    }
 }
