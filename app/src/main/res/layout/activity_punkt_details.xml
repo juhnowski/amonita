@@ -6,4 +6,205 @@
     android:layout_height="match_parent"
     tools:context=".PunktDetails">
 
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView_opisanie_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:text="Описание" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView_opisanie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:lines="5"
+                android:text="Прием в неограниченных количествах грибов, ягод, папоротника, мха, лишайника. Возможен вывоз продукции. Минимальный объем принимаемой продукции от 10 кг - грибы, от 1л - ягоды" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView_opisanie_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:text="График работы" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView_gr_raboti_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:text="12 августа 2020, пятница" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView_gr_raboti_h_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_menu_today"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:text="14:30 - 20:30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView_address_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:text="Как добраться" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_menu_mylocation"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:text="Б.Грузинская ул., 1, Москва, Россия" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView_doc_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:drawableLeft="@android:drawable/ic_menu_report_image"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:text="Закупочный акт.docx" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/button_add_punkt_to_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@android:drawable/ic_menu_add"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:background="@color/colorAccent"
+                android:text="Добавить в избранное"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/button_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:background="@color/colorAccent"
+                android:text="Подписать Закупочный акт"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/button_materials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@android:drawable/ic_menu_agenda"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:background="@color/colorAccent"
+                android:text="Материалы"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/button_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@android:drawable/ic_menu_camera"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:background="@color/colorAccent"
+                android:text="Фотот / Видео"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/button_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:background="@color/colorAccent"
+                android:text="Обратная связь"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
