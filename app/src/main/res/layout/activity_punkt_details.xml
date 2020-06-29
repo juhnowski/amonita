@@ -132,6 +132,7 @@
                 android:drawablePadding="2dp"
                 android:background="@color/colorAccent"
                 android:text="Добавить в избранное"
+                android:onClick="add_to_favorites"
                 />
 
             <View
@@ -165,7 +166,8 @@
                 android:gravity="center_vertical"
                 android:drawablePadding="2dp"
                 android:background="@color/colorAccent"
-                android:text="Материалы"
+                android:text="Документы"
+                android:onClick="show_documents"
                 />
 
             <View
@@ -183,6 +185,7 @@
                 android:drawablePadding="2dp"
                 android:background="@color/colorAccent"
                 android:text="Фотот / Видео"
+                android:onClick="show_presentation"
                 />
 
             <View
