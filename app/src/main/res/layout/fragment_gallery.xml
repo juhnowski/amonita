@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".ui.gallery.GalleryFragment">
 
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+
+
     <EditText
         android:id="@+id/editTextTextPostalAddress"
         android:layout_width="match_parent"
@@ -25,7 +32,7 @@
         android:layout_marginRight="20dp"
         android:background="@color/colorAccent"
         android:text="Ближайшие пункты"
-
+        android:onClick="show_punkts"
         />
 
     <ImageView

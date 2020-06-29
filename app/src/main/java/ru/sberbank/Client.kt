@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -53,7 +54,20 @@ class Client : AppCompatActivity() {
         return true
     }
 
-    override fun onSupportNavigateUp(): Boolean {
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_settings -> {
+                val intent = Intent(this, Settings::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
@@ -70,8 +84,10 @@ class Client : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun show_settings(v:View){
-        val intent = Intent(this, Settings::class.java)
+    fun show_punkts(v: View){
+        val intent = Intent(this, Punkts::class.java)
         startActivity(intent)
     }
+
+
 }
