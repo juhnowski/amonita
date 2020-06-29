@@ -16,4 +16,9 @@ class Punkts : AppCompatActivity() {
         val intent = Intent(this, FPunkts::class.java)
         startActivity(intent)
     }
+
+    fun show_details(v:View){
+        val intent = Intent(this, PunktDetails::class.java)
+        startActivity(intent)
+    }
 }

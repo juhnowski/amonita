@@ -89,5 +89,8 @@ class Client : AppCompatActivity() {
         startActivity(intent)
     }
 
-
+    fun show_details_punkt_from_map(v:View){
+        val intent = Intent(this, PunktDetails::class.java)
+        startActivity(intent)
+    }
 }

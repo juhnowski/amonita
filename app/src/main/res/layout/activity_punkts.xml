@@ -55,7 +55,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/p1" />
+        app:srcCompat="@drawable/p1"
+        android:onClick="show_details"
+        />
 
     <View
         android:layout_width="match_parent"
@@ -71,6 +73,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/p2" />
+        app:srcCompat="@drawable/p2"
+        android:onClick="show_details"
+        />
 
 </LinearLayout>

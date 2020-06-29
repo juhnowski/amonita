@@ -39,6 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/p1" />
+        app:srcCompat="@drawable/p1"
+        android:onClick="show_details_of_favorites"
+        />
 
 </LinearLayout>
