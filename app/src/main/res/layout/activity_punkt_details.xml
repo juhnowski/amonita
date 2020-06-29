@@ -24,7 +24,7 @@
                 android:layout_height="20dp" />
 
             <TextView
-                android:id="@+id/textView_opisanie_t"
+                android:id="@+id/textView_opisanie_t1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold|italic"
@@ -206,6 +206,7 @@
                 android:drawablePadding="2dp"
                 android:background="@color/colorAccent"
                 android:text="Обратная связь"
+                android:onClick="send_msg"
                 />
 
             <View

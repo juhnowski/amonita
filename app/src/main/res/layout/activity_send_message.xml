@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    tools:context=".SendMessage">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_opisanie_t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:text="Отправить сообщение" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/textView_opisanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:lines="5"
+        android:text="Здесь вы можете отправить сообщение нашему администратору" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress_From"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="От: example@gmail.com"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress_Thema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Тема"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress_Msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Написать сообщение"
+        android:minLines="5"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button_get_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Отправить"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="send_message"
+        />
+</LinearLayout>

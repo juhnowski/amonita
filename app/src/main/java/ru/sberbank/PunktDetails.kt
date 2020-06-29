@@ -32,4 +32,9 @@ class PunktDetails : AppCompatActivity() {
         val intent = Intent(this, ZakupkaAct::class.java)
         startActivity(intent)
     }
+
+    fun send_msg(v:View){
+        val intent = Intent(this, SendMessage::class.java)
+        startActivity(intent)
+    }
 }

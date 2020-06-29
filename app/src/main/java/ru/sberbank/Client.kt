@@ -63,6 +63,16 @@ class Client : AppCompatActivity() {
                 startActivity(intent)
                 return true
             }
+            R.id.action_history -> {
+                val intent = Intent(this, History::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.action_about -> {
+                val intent = Intent(this, About::class.java)
+                startActivity(intent)
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }
@@ -93,4 +103,5 @@ class Client : AppCompatActivity() {
         val intent = Intent(this, PunktDetails::class.java)
         startActivity(intent)
     }
+
 }
