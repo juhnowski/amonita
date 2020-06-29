@@ -16,4 +16,9 @@ class Vhod : AppCompatActivity() {
         val intent = Intent(this, Reapir::class.java)
         startActivity(intent)
     }
+
+    fun goto_client(v: View){
+        val intent = Intent(this, Client::class.java)
+        startActivity(intent)
+    }
 }
