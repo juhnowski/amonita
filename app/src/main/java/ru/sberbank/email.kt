@@ -5,21 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class RegVhod : AppCompatActivity() {
+class email : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reg_vhod)
-        setTitle("Выберите действие");
+        setContentView(R.layout.activity_email)
+        setTitle("Укажите Ваш Email");
     }
 
-    fun goto_registration(v: View){
-        val intent = Intent(this, Registration::class.java)
-        startActivity(intent)
-    }
-
-    fun goto_vhod(v: View){
+    fun goto_vhod_1(v: View){
         val intent = Intent(this, Vhod::class.java)
         startActivity(intent)
     }
-
 }

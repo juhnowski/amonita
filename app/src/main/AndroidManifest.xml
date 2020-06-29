@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegVhod"></activity>
+        <activity android:name=".Vhod"></activity>
+        <activity android:name=".email" />
+        <activity android:name=".Registration" />
+        <activity android:name=".RegVhod" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

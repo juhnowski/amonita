@@ -10,46 +10,40 @@
     android:layout_gravity="top"
     >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:scaleType="fitEnd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
-
     <View
-        android:id="@+id/divider1"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         />
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="Регистрация"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:onClick="goto_registration"
-        />
+        android:text="Мы используем email для регистрации ID." />
+
     <View
-        android:id="@+id/divider2"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="20dp"
         />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_get_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:text="Вход"
+        android:text="Получить ID"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:onClick="goto_vhod"
+        android:onClick="goto_vhod_1"
         />
+
+
 </LinearLayout>
