@@ -10,6 +10,11 @@
     android:layout_gravity="top"
     >
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+
     <ImageView
         android:id="@+id/imageView_news_1"
         android:layout_width="match_parent"
@@ -19,20 +24,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/news_1"
-        android:onClick="goto_browser"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-    <TextView
-        android:id="@+id/textView_NoCode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        android:text="Пензенцы стали реже покупать грибы у уличных продавцов"
-        android:onClick="goto_browser"
-        android:clickable="true"
-        />
+        app:srcCompat="@drawable/statistica"
+    />
+
+    <ImageView
+        android:id="@+id/imageView_news_2"
+        android:layout_width="384dp"
+        android:layout_height="468dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/history" />
 
 </LinearLayout>

@@ -107,22 +107,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
-            <TextView
-                android:id="@+id/textView_doc_t"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold|italic"
-                android:drawableLeft="@android:drawable/ic_menu_report_image"
-                android:gravity="center_vertical"
-                android:drawablePadding="2dp"
-                android:text="Закупочный акт.docx"
-                android:onClick="sign_act"
-                />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
             <Button
                 android:id="@+id/button_add_punkt_to_favorites"
                 android:layout_width="match_parent"
@@ -151,8 +135,8 @@
                 android:gravity="center_vertical"
                 android:drawablePadding="2dp"
                 android:background="@color/colorAccent"
-                android:text="Подписать Закупочный акт"
-                android:onClick="sign_act"
+                android:text="Закупочный акт"
+                android:onClick="gen_act"
                 />
 
             <View
@@ -173,23 +157,23 @@
                 android:onClick="show_documents"
                 />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp" />-->
 
-            <Button
-                android:id="@+id/button_media"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:drawableLeft="@android:drawable/ic_menu_camera"
-                android:gravity="center_vertical"
-                android:drawablePadding="2dp"
-                android:background="@color/colorAccent"
-                android:text="Фотот / Видео"
-                android:onClick="show_presentation"
-                />
+<!--            <Button-->
+<!--                android:id="@+id/button_media"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:drawableLeft="@android:drawable/ic_menu_camera"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:drawablePadding="2dp"-->
+<!--                android:background="@color/colorAccent"-->
+<!--                android:text="Фотот / Видео"-->
+<!--                android:onClick="show_presentation"-->
+<!--                />-->
 
             <View
                 android:layout_width="match_parent"

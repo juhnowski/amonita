@@ -28,8 +28,8 @@ class PunktDetails : AppCompatActivity() {
                 .setAction("Action", null).show()
     }
 
-    fun sign_act(v:View){
-        val intent = Intent(this, ZakupkaAct::class.java)
+    fun gen_act(v:View){
+        val intent = Intent(this, ZakupkaGen::class.java)
         startActivity(intent)
     }
 

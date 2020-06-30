@@ -44,6 +44,17 @@
         android:layout_height="20dp"
         />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Мой счет в Сбербанк"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+
     <CheckedTextView
         android:id="@+id/checkedTextView"
         android:layout_width="match_parent"
@@ -56,6 +67,29 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         />
+
+    <TextView
+        android:id="@+id/textView_opisanie_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle=""
+        android:text="Лицензионное соглашение"
+        android:onClick="read_lic"/>
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView_lic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="true"
+        android:text="Я прочитал и соглашаюсь с лицензионным соглашением" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+
+
 
     <Button
         android:id="@+id/button__registration_next"

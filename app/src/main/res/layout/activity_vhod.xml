@@ -51,15 +51,28 @@
         android:layout_height="20dp"
         />
     <Button
-        android:id="@+id/button_get_id"
+        android:id="@+id/button_vhod_sborshik"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:text="Продолжить"
+        android:text="Войти как Сборщик"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:onClick="goto_client"
         />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <Button
+        android:id="@+id/button_vhod_zagotovitel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Войти как Заготовитель"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="goto_client"
+        />
 
 </LinearLayout>

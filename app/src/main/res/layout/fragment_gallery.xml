@@ -11,33 +11,30 @@
     <View
         android:id="@+id/divider1"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        />
+        android:layout_height="40dp" />
 
     <TextView
         android:id="@+id/textView_find_punkts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Поиск пункта" />
+        android:text="Поиск пункта по продукту" />
 
     <View
         android:id="@+id/divider1"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
+        android:layout_height="20dp" />
 
 
     <EditText
         android:id="@+id/find_nearest_punkt_map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
         android:drawableLeft="@android:drawable/ic_menu_search"
         android:drawablePadding="2dp"
-        />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="земляника" />
 
     <Button
         android:id="@+id/button_get_bliz_punkt"
@@ -46,24 +43,21 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/colorAccent"
-        android:text="Ближайшие пункты"
         android:onClick="show_punkts"
-        />
+        android:text="Ближайшие пункты" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
+        android:onClick="show_details_punkt_from_map"
+
         android:scaleType="fitEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/map"
-        android:onClick="show_details_punkt_from_map"
-        />
-
-
+        app:srcCompat="@drawable/map" />
 
 
 </LinearLayout>
