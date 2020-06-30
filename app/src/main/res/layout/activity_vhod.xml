@@ -74,5 +74,33 @@
         android:layout_marginRight="20dp"
         android:onClick="goto_client"
         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <Button
+        android:id="@+id/button_vhod_zagotovitel_sbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Войти через Сбербанк Онлайн"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="goto_client"
+        />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <Button
+        android:id="@+id/button_vhod_zagotovitel_sbbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Войти через Сбербанк Бизнес Онлайн"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="goto_client"
+        />
 </LinearLayout>

@@ -36,19 +36,19 @@
         android:inputType="textPersonName"
         android:text="земляника" />
 
-    <Button
-        android:id="@+id/button_get_bliz_punkt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorAccent"
-        android:onClick="show_punkts"
-        android:text="Ближайшие пункты" />
+<!--    <Button-->
+<!--        android:id="@+id/button_get_bliz_punkt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:onClick="show_punkts"-->
+<!--        android:text="Ближайшие пункты" />-->
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="365dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:onClick="show_details_punkt_from_map"

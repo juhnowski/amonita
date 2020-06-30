@@ -20,26 +20,26 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text=""
+        android:text="Земляника"
         android:drawableLeft="@android:drawable/ic_menu_search"
         android:drawablePadding="2dp"
         />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="20dp"-->
+<!--        />-->
 
-    <Button
-        android:id="@+id/button_get_bliz_punkt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorAccent"
-        android:text="Избранные пункты"
-        android:onClick="show_favorites"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/button_get_bliz_punkt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:text="Избранные пункты"-->
+<!--        android:onClick="show_favorites"-->
+<!--        />-->
 
     <View
         android:layout_width="match_parent"

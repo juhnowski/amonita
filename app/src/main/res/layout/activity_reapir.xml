@@ -37,7 +37,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:text="Восстановить пароль"
+        android:text="Восстановить ID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="goto_vhod_2"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <Button
+        android:id="@+id/button_get_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Восстановить SberbankID"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:onClick="goto_vhod_2"
