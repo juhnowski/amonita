@@ -76,6 +76,12 @@ class Client : AppCompatActivity() {
                 startActivity(intent)
                 return true
             }
+            R.id.action_map -> {
+                val intent = Intent(this, SetMap::class.java)
+                startActivity(intent)
+                return true
+            }
+
         }
         return super.onOptionsItemSelected(item)
     }

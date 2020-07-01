@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Amanita</string>
+    <string name="app_name">СоБЕРУ.ру</string>
     <string name="title_activity_client">Client</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Мухомор</string>
+    <string name="nav_header_title">СоБЕРУ.ру</string>
     <string name="nav_header_subtitle">amanita.support@sberbank.ru</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Настройки</string>

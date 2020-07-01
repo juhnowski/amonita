@@ -18,7 +18,7 @@
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_about1"
+        android:id="@+id/action_map"
         android:orderInCategory="100"
         android:title="Карта"
         app:showAsAction="never" />
