@@ -3,10 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_gravity="top"
     android:orientation="vertical"
+    android:background="@drawable/gradient"
     tools:context=".SendMessage">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:background="@drawable/layout_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
 
     <View
         android:layout_width="match_parent"
@@ -71,4 +87,5 @@
         android:layout_marginRight="20dp"
         android:onClick="send_message"
         />
+</LinearLayout>
 </LinearLayout>

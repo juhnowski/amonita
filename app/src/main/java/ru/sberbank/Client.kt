@@ -143,4 +143,42 @@ class Client : AppCompatActivity() {
         // Display the alert dialog on app interface
         dialog.show()
     }
+
+    fun show_notify_1(v:View){
+        val builder = AlertDialog.Builder(this@Client)
+
+        // Set the alert dialog title
+        builder.setTitle("На подпись")
+
+        // Display a message on alert dialog
+        builder.setMessage("Подписать акт закупки №123/1 на сумму 12000руб. от Длиннофамильного за 1л земляники, 2л черники и 10л брусники")
+
+        // Set a positive button and its click listener on alert dialog
+        builder.setPositiveButton("Ок"){dialog, which ->
+            // Do something when user press the positive button
+            Toast.makeText(applicationContext,"Сделка успешно завершена.",Toast.LENGTH_SHORT).show()
+
+//            // Change the app background color
+//            activity_client.setBackgroundColor(Color.RED)
+        }
+
+
+        // Display a negative button on alert dialog
+        builder.setNegativeButton("Открыть спор"){dialog,which ->
+            Toast.makeText(applicationContext,"Вы открываете спор.",Toast.LENGTH_SHORT).show()
+        }
+
+
+        // Display a neutral button on alert dialog
+        builder.setNeutralButton("Перейти в СББОЛ"){_,_ ->
+            Toast.makeText(applicationContext,"Переход в Сбербанк Бизнес Онлайн.",Toast.LENGTH_SHORT).show()
+        }
+
+        // Finally, make the alert dialog using builder
+        val dialog: AlertDialog = builder.create()
+
+        // Display the alert dialog on app interface
+        dialog.show()
+    }
+
 }

@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="top"
     android:orientation="vertical"
+    android:background="@drawable/gradient"
     tools:context=".FPunkts">
 
     <View

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".PersonalInformationEdit">
+    tools:context=".Pul">
+
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,8 +25,8 @@
 
     <ScrollView
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="1dp"
@@ -37,26 +38,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/text_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/photo_upload"
-                tools:layout_editor_absoluteX="13dp"
-                tools:layout_editor_absoluteY="28dp"
-                android:onClick="goto_pul"/>
 
             <View
                 android:layout_width="match_parent"
@@ -66,7 +50,7 @@
                 android:id="@+id/textView_dolzhnost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Имя" />
+                android:text="Название организации" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName_dolzhnost"
@@ -74,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="Введите ваше имя" />
+                android:hint="Прогресс" />
 
 
             <View
@@ -85,7 +69,7 @@
                 android:id="@+id/textView_mesto_raboti"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Фамилия" />
+                android:text="Регистрационная форма" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName_mesto_raboti"
@@ -93,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="Введите вашу фамилию" />
+                android:hint="ООО" />
 
             <View
                 android:layout_width="match_parent"
@@ -103,7 +87,7 @@
                 android:id="@+id/textView_region"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Email" />
+                android:text="ИНН" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName_region"
@@ -111,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:hint="example@gmail.com" />
+                android:hint="7736050003" />
 
             <View
                 android:layout_width="match_parent"
@@ -121,7 +105,7 @@
                 android:id="@+id/textView_deyatelnost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Сфера деятельности" />
+                android:text="ОГРН" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName_deyatelnost"
@@ -129,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="none"
-                android:text="Приемно-заготавительный пункт" />
+                android:text="1027700070518" />
 
             <View
                 android:layout_width="match_parent"
@@ -139,7 +123,7 @@
                 android:id="@+id/textView_region_t"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Регион проживания" />
+                android:text="Дата ОГРН" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName_region_prozh"
@@ -147,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                android:hint="Московская область" />
+                android:hint="02.08.2002" />
 
             <View
                 android:layout_width="match_parent"
@@ -157,7 +141,7 @@
                 android:id="@+id/textView_gorod_t"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Населенный пункт" />
+                android:text="КПП" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName_gorod"
@@ -165,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                android:hint="Москва" />
+                android:hint="772801001" />
 
             <View
                 android:layout_width="match_parent"
@@ -175,7 +159,7 @@
                 android:id="@+id/textView_company"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Компания" />
+                android:text="ОКПО" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName_company"
@@ -183,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                android:hint="В какой компании вы работаете" />
+                android:hint="00040778" />
 
             <View
                 android:layout_width="match_parent"
@@ -193,7 +177,7 @@
                 android:id="@+id/textView_dol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Должность" />
+                android:text="Счет в Сбербанке" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName_dol"
@@ -201,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                android:hint="Укажите вашу должность" />
+                android:hint="12345678901234567890" />
 
             <Button
                 android:id="@+id/button_save_personal_info"
@@ -211,10 +195,66 @@
                 android:text="Сохранить изменения"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:onClick="goto_client"
+                android:onClick="goto_client_from_pul"
                 />
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/photo_upload"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузите логотип"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="132dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

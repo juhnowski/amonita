@@ -8,97 +8,119 @@
     tools:context=".Registration"
     android:orientation="vertical"
     android:layout_gravity="top"
+    android:background="@drawable/gradient"
     android:label="Регистрация"
     >
 
-    <EditText
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Фамилия"
-        />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Имя"
-        />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Отчество"
-        />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Мой счет в Сбербанк"
-        />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-
-    <CheckedTextView
-        android:id="@+id/checkedTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-        android:checked="true"
-        android:text="Согласен на обработку персональных данных   " />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-
-    <TextView
-        android:id="@+id/textView_opisanie_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle=""
-        android:text="Лицензионное соглашение"
-        android:onClick="read_lic"/>
-
-    <CheckedTextView
-        android:id="@+id/checkedTextView_lic"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-        android:checked="true"
-        android:text="Я прочитал и соглашаюсь с лицензионным соглашением" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        />
-
-
-
-    <Button
-        android:id="@+id/button__registration_next"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="Продолжить"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:background="@drawable/layout_background"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:onClick="goto_email"
-        />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Фамилия"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Отчество"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Мой счет в Сбербанк"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:checked="true"
+            android:text="Согласен на обработку персональных данных   " />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_opisanie_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle=""
+            android:text="Лицензионное соглашение"
+            android:onClick="read_lic"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView_lic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:checked="true"
+            android:text="Я прочитал и соглашаюсь с лицензионным соглашением" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/button__registration_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Продолжить"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="goto_email"
+            />
+    </LinearLayout>
+
 </LinearLayout>

@@ -5,20 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class PersonalInformationEdit : AppCompatActivity() {
+class Pul : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_personal_information_edit)
-        setTitle("Редактирование профиля")
+        setContentView(R.layout.activity_pul)
+        setTitle("Реквизиты Юр.Лица")
     }
 
-    fun goto_client(v: View){
+    fun goto_client_from_pul(v: View){
         val intent = Intent(this, Client::class.java)
-        startActivity(intent)
-    }
-
-    fun goto_pul(v: View){
-        val intent = Intent(this, Pul::class.java)
         startActivity(intent)
     }
 }

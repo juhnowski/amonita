@@ -16,4 +16,10 @@
         android:orderInCategory="100"
         android:title="О программе"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about1"
+        android:orderInCategory="100"
+        android:title="Карта"
+        app:showAsAction="never" />
 </menu>
